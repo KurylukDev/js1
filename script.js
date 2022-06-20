@@ -1,53 +1,32 @@
 
-/*
-let number1, number2
+let sueldoBruto, iva;
 let repeat = true
-while(repeat){
-    number1 = parseFloat(prompt("Ingrese un numero"));
-    number2 = parseFloat(prompt("Ingrese otro numero"));
-
-    if(!(isNaN(number1) || isNaN(number2)) ) {
-        repeat = false
-    }
-
-}
-console.log(number1 + number2)
-
-*/
-/*
-let palabra
-do {
-     palabra = prompt("Ingrese una palabra").toLowerCase()
-} while(palabra != "salir") */
-/*
-let numero2, numero1, operacion
-
+let argentina = 79
+let uruguay = 78
+let chile = 81
+let peru = 82
+//tuve un problema aca no me tomaba 1.21
 do{
-    numero1 = parseFloat(prompt("Ingrese un numero"));
-    numero2 = parseFloat(prompt("Ingrese otro numero"));
-    operacion = prompt("Ingrese una operacion (+,-,%,*")
-}while((isNaN(numero1) || isNaN(numero2)))
+    sueldoBruto = parseFloat(prompt("Ingrese su sueldo bruto"));
+    iva = parseFloat(prompt("Ingrese numero de opcion: \n 1-Argentina  \n 2-Uruguay  \n 3-Chile  \n 4-Peru"));
 
-switch(operacion){
-    case "+":
-        alert("El resultado es: " + numero1 + numero2)
-        break
-    case "-":
-        alert(numero1 - numero2)
-        break
-    case "/":
-        alert(numero1 / numero2)
-        break
-    case "*":
-        alert(numero1 * numero2)
-        break
-    default:
-        alert("Operacion no valida")
-}*/
+    
+}while((isNaN(sueldoBruto) || isNaN(iva))) {
 
-
-function sumar() {
-    console.log(5+5)
+    switch(iva){
+        case 1:
+            alert("Su sueldo neto es de: "+ (sueldoBruto / 100) * argentina)
+            break
+        case 2: 
+            alert("Su sueldo neto es de: "+ (sueldoBruto / 100 ) * uruguay)
+            break
+        case 3:
+            alert("Su sueldo neto es de: "+ (sueldoBruto / 100 ) * chile)
+            break
+        case 4:
+            alert("Su sueldo neto es de: "+ (sueldoBruto / 100 ) * peru)
+            break
+        default:
+            alert("Operación no valida")}
+    
 }
-
-sumar()
