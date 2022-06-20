@@ -1,5 +1,5 @@
 
-let sueldoBruto, iva;
+let sueldoBruto, pais;
 let repeat = true
 let argentina = 79
 let uruguay = 78
@@ -8,12 +8,12 @@ let peru = 82
 //tuve un problema aca no me tomaba 1.21
 do{
     sueldoBruto = parseFloat(prompt("Ingrese su sueldo bruto"));
-    iva = parseFloat(prompt("Ingrese numero de opcion: \n 1-Argentina  \n 2-Uruguay  \n 3-Chile  \n 4-Peru"));
+    pais = parseFloat(prompt("Ingrese numero de opcion: \n 1-Argentina  \n 2-Uruguay  \n 3-Chile  \n 4-Peru"));
 
     
-}while((isNaN(sueldoBruto) || isNaN(iva))) {
+}while((isNaN(sueldoBruto) || isNaN(pais))) {
 
-    switch(iva){
+    switch(pais){
         case 1:
             alert("Su sueldo neto es de: "+ (sueldoBruto / 100) * argentina)
             break
