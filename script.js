@@ -1,6 +1,5 @@
-
+/*
 let sueldoBruto, pais;
-let repeat = true
 let argentina = 79
 let uruguay = 78
 let chile = 81
@@ -9,7 +8,8 @@ let peru = 82
     do{  
         sueldoBruto = parseFloat(prompt("Ingrese su sueldo bruto"));
         pais = parseFloat(prompt("Ingrese numero de opcion: \n 1-Argentina  \n 2-Uruguay  \n 3-Chile  \n 4-Peru \n 5-salir"  ));
-    }while((isNaN(sueldoBruto) || isNaN(pais))) {
+    }
+    while((isNaN(sueldoBruto) && isNaN(pais)), pais != 5) {
 
     switch(pais){
         case 1:
@@ -33,6 +33,23 @@ let peru = 82
             console.log("Gracias por utilizarnos")
             break
         default:
-            alert("Operación no valida")}
-    
+            alert("Operación no valida")
+        }
+
+*/
+let numero = parseFloat(prompt("Ingrese un numero para sumar"))
+for(let i = 0; i <= numero ;i++) {    
+if( i === 5) {
+    continue
+}
+console.log(i)
+}
+
+let texto = prompt("Ingrese una plabra")
+let resultado
+let textosumado
+while(textosumado != "esc"){
+    textosumado = prompt("Ingrese palabra para agregar anterior o Escriba ESC para terminar")
+    resultado = texto + textosumado
+    console.log(resultado)
 }
