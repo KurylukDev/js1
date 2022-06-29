@@ -1,55 +1,20 @@
-/*
-let sueldoBruto, pais;
-let argentina = 79
-let uruguay = 78
-let chile = 81
-let peru = 82
-//tuve un problema aca no me tomaba 1.21
-    do{  
-        sueldoBruto = parseFloat(prompt("Ingrese su sueldo bruto"));
-        pais = parseFloat(prompt("Ingrese numero de opcion: \n 1-Argentina  \n 2-Uruguay  \n 3-Chile  \n 4-Peru \n 5-salir"  ));
+class Animal{
+    constructor(id, nombre, especie, color, peso){
+        this.id = id
+        this.nombre = nombre
+        this.especie = especie
+        this.color = color
+        this.peso = peso
     }
-    while((isNaN(sueldoBruto) && isNaN(pais)), pais != 5) {
-
-    switch(pais){
-        case 1:
-            alert("Su sueldo neto es de: "+ (sueldoBruto / 100) * argentina)
-            console.log("Su sueldo neto es de: "+ (sueldoBruto / 100) * argentina)
-            break
-        case 2: 
-            alert("Su sueldo neto es de: "+ (sueldoBruto / 100 ) * uruguay)
-            console.log("Su sueldo neto es de: "+ (sueldoBruto / 100) * uruguay)
-            break
-        case 3:
-            alert("Su sueldo neto es de: "+ (sueldoBruto / 100 ) * chile)
-            console.log("Su sueldo neto es de: "+ (sueldoBruto / 100) * chile)
-            break
-        case 4:
-            alert("Su sueldo neto es de: "+ (sueldoBruto / 100 ) * peru)
-            console.log("Su sueldo neto es de: "+ (sueldoBruto / 100) * peru)
-            break
-        case 5:
-            alert("Gracias por utilizarnos")
-            console.log("Gracias por utilizarnos")
-            break
-        default:
-            alert("Operación no valida")
-        }
-
-*/
-let numero = parseFloat(prompt("Ingrese un numero para sumar"))
-for(let i = 0; i <= numero ;i++) {    
-if( i === 5) {
-    continue
-}
-console.log(i)
 }
 
-let texto = prompt("Ingrese una plabra")
-let resultado
-let textosumado
-while(textosumado != "esc"){
-    textosumado = prompt("Ingrese palabra para agregar anterior o Escriba ESC para terminar")
-    resultado = texto + textosumado
-    console.log(resultado)
-}
+const animal1 = new Animal(1, "Crespuculo", "Wolf", "Black", 60)
+const animal2 = new Animal(2, "Bad Bunny BB", "Bunny", "Grey", 10)
+const animal3 = new Animal(3, "Mota", "Beard", "Gris", 460)
+const animal4 = new Animal(4, "Gominola", "Beard", "Brown", 360)
+
+const animales = [animal1, animal2, animal3, animal4]
+
+animales.forEach(animal => {
+    console.table(animal)
+})
