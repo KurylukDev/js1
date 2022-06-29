@@ -1,18 +1,15 @@
  // PRIMERA TAREA
 
-let numero = parseFloat(prompt("Ingrese un numero para sumar"))
+let numero = parseFloat(prompt("Ingrese la cantidad de pasos que quiere dar"))
 for(let i = 0; i <= numero ;i++) {    
 if( i === 5) {
-    continue
-}
-console.log(i)
-}
-
-let texto = prompt("Ingrese una plabra")
-let resultado
 let textosumado
-while(textosumado != "esc"){
-    textosumado = prompt("Ingrese palabra para agregar anterior o Escriba ESC para terminar").toLocaleLowerCase()
-    resultado = texto + textosumado
-    console.log(resultado)
+alert("Se te cayo una moneda de 1 peso")
+textosumado = prompt("Desea continuar caminando? si o no").toLocaleLowerCase()
+if(textosumado === "si"){
+    continue
+}else{
+    break
+}}
+console.log(i)
 }
