@@ -1,3 +1,8 @@
+console.log(document.getElementById("prf1"))
+const parrafo4 = document.getElementById("prf4")
+parrafo4.innerText = "hola coder"
+
+/*
 let descuento = 200
 let productos
 //Comidas
@@ -86,4 +91,4 @@ let taladro = 2850
                 alert("Operación no valida")
                 break;
         }
-    }
+    } */
