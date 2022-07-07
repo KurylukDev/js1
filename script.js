@@ -1,15 +1,6 @@
- // PRIMERA TAREA
+let container = document.getElementById("contenedor")
+let containerBootstrap = document.getElementById("contenedorDos")
 
-let numero = parseFloat(prompt("Ingrese la cantidad de pasos que quiere dar"))
-for(let i = 0; i <= numero ;i++) {    
-if( i === 5) {
-let textosumado
-alert("Se te cayo una moneda de 1 peso")
-textosumado = prompt("Desea continuar caminando? si o no").toLocaleLowerCase()
-if(textosumado === "si"){
-    continue
-}else{
-    break
-}}
-console.log(i)
-}
+container.innerHTML = "<h2>Hola Mundo</h2>"
+
+containerBootstrap.innerHTML = "<div> <h2>Probando</h2></div> "
