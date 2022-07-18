@@ -7,15 +7,19 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="parf">
-      <p id="prf1">parrafo 1</p>
-      <p id="prf2">parrafo 2</p>
-      <p id="prf3">parrafo 3</p>
-      <p id="prf4"></p>
-    </div>
-    <div class="parf">
-      <p>Lorem, ipsum.</p>
-    </div>
+    <main>
+      Cantidad:
+      <input
+        type="text"
+        name="cantidad"
+        onKeyPress="return onKeyPressBlockChars(event,this.value);"
+        onKeyUp="calculaPorcentajes(this.value)"
+      /><br /><br />
+      21%:
+      <input type="text" name="porcentaje21" id="porcentaje21" /><br /><br />
+      0%: <input type="text" name="porcent25" id="porcent25" /><br /><br />
+      100%: <input type="text" name="porcent15" id="porcent15"
+    </main>
     <script src="script.js"></script>
   </body>
 </html>
