@@ -5,8 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
+    <!--  formulario Inicio-->
+    <div class="container">
+      <form id="idForm">
+        <div class="mb-3">
+          <label for="producto" class="form-label">Producto</label>
+          <input
+            type="text"
+            class="form-control"
+            id="producto"
+            aria-describedby="userHelp"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="precio" class="form-label">Precio</label>
+          <input
+            type="number"
+            class="form-control"
+            id="precio"
+            aria-describedby="userHelp"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="stock" class="form-label">Stock</label>
+          <input
+            type="number"
+            class="form-control"
+            id="stock"
+            aria-describedby="emailHelp"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary">
+          Crear Nuevo Producto
+        </button>
+      </form>
+    </div>
+    <!--  formulario FIN -->
+    <!--  producto INICIO -->
+    <div id="contenedor" class="contenedor"></div>
+    <!--  Producto FIN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
     <script src="script.js"></script>
   </body>
 </html>
