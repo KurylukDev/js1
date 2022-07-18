@@ -30,5 +30,5 @@ formulario.addEventListener('submit', (event) => {
     </div>`
   }) 
   formulario.reset()
-
+  id++
 })
