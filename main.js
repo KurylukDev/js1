@@ -1,3 +1,4 @@
+/*
 //array
 class Producto {
   constructor(id, producto, stock, precio) {
@@ -32,3 +33,5 @@ formulario.addEventListener('submit', (event) => {
   formulario.reset()
 
 })
+*/
+
