@@ -1,32 +1,41 @@
-p{
-    font-size: 20px;
-}
-.styleHerramienta{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    margin: 5px;   
-    padding:10px;
-    background-color:aliceblue;
-    border: 2px black solid;
+*{
+    margin:0;
+    padding:0;
 }
 
-.styleComida{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    margin: 5px;   
-    padding:10px;
-    background-color:rgb(240, 255, 242);
-    border: 2px black solid;
+#formulario{
+    margin: 40px;
 }
 
-.styleRopa{
+.centrar{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin: 5px;
+}
+.contenedorMostrar{
+    background-color: rgba(0, 234, 255, 0.254);
+    width:250px;
+}
+
+.mostrar{
     display:flex;
     flex-direction:column;
+    justify-content:center;
     align-items:center;
-    margin: 5px;   
-    padding:10px;
-    background-color:rgb(252, 240, 255);
-    border: 2px black solid;
+    margin: auto;
+}
+
+.imgProducto{
+    margin: 10px;
+    width: 150px;
+    height: 100px;
+}
+
+
+.contenedorMostrar button{
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 10px;
 }
