@@ -14,11 +14,12 @@ if(localStorage.getItem("storageProductos")) {
 } else {
     localStorage.setItem("storageProductos", JSON.stringify(productos))
 }
-
+//Inicio de Formulario
 const form = document.getElementById("formulario")
 const botonMostrar = document.getElementById("mostrar")
 const contenedorProductos = document.getElementById("contenedorProductos")
 
+//Enviar Información del formulario al Array y LocalStorage
 form.addEventListener("submit", (e) => {
     e.preventDefault()
     console.log(e)
@@ -28,7 +29,9 @@ form.addEventListener("submit", (e) => {
     localStorage.setItem("storageProductos", JSON.stringify(productos))
     form.reset()
 })
+//Fin de Formulario
 
+//Imprimir DOM al HTML
 botonMostrar.addEventListener("click", () => {
     let productoStorage = JSON.parse(localStorage.getItem("storageProductos"))
     contenedorProductos.innerHTML = ""
@@ -45,7 +48,9 @@ botonMostrar.addEventListener("click", () => {
             </div>
         `
     })
+    // FIN Imprimir DOM al HTML
     
+    //Boton para eliminar DOM y LocalStorage
     productoStorage.forEach((producto, indice) => {
         document.getElementById(`producto${indice}`).lastElementChild.lastElementChild.addEventListener("click", () => {
             document.getElementById(`producto${indice}`).remove()
@@ -56,3 +61,5 @@ botonMostrar.addEventListener("click", () => {
         })
     })
 })
+
+//
