@@ -20,6 +20,7 @@ const botonMostrar = document.getElementById("mostrar")
 const contenedorProductos = document.getElementById("contenedorProductos")
 
 //Enviar Información del formulario al Array y LocalStorage
+//Crea un nuevo producto array con la informacion que el usuario brinda 
 form.addEventListener("submit", (e) => {
     e.preventDefault()
     console.log(e)
@@ -31,7 +32,7 @@ form.addEventListener("submit", (e) => {
 })
 //Fin de Formulario
 
-//Imprimir DOM al HTML
+//Imprimir al HTML cuando el usuario le da click a Mostrar Productos
 botonMostrar.addEventListener("click", () => {
     let productoStorage = JSON.parse(localStorage.getItem("storageProductos"))
     contenedorProductos.innerHTML = ""
@@ -50,7 +51,7 @@ botonMostrar.addEventListener("click", () => {
     })
     // FIN Imprimir DOM al HTML
     
-    //Boton para eliminar DOM y LocalStorage
+    //Elimina el producto del HTML y del localstorage cuando el usuario le da click a Eliminar
     productoStorage.forEach((producto, indice) => {
         document.getElementById(`producto${indice}`).lastElementChild.lastElementChild.addEventListener("click", () => {
             document.getElementById(`producto${indice}`).remove()
