@@ -8,12 +8,12 @@ class Articulos {
 
 let productos = []
 
-
-if(localStorage.getItem("storageProductos")) {
+localStorage.getItem("storageProductos") ? productos = JSON.parse(localStorage.getItem("storageProductos")) : localStorage.setItem("storageProductos", JSON.stringify(productos))
+/*if(localStorage.getItem("storageProductos")) {
     productos = JSON.parse(localStorage.getItem("storageProductos"))
 } else {
     localStorage.setItem("storageProductos", JSON.stringify(productos))
-}
+}*/
 //Inicio de Formulario
 const form = document.getElementById("formulario")
 const botonMostrar = document.getElementById("mostrar")
