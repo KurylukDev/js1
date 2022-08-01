@@ -44,7 +44,7 @@ botonMostrar.addEventListener("click", () => {
                 <p class="centrar">Precio: $${producto.precio}</p>
                 <p class="centrar">Stock: ${producto.stock}/Unidades</p>
                 <img class="imgProducto" src="https://definicion.de/wp-content/uploads/2009/06/producto.png" alt="">
-                <button class="btn btn-danger">Eliminar Producto</button>
+                <button id="btnEliminar" class="btn btn-danger">Eliminar Producto</button>
                 </div>
             </div>
         `
@@ -54,6 +54,17 @@ botonMostrar.addEventListener("click", () => {
     //Elimina el producto del HTML y del localstorage cuando el usuario le da click a Eliminar
     productoStorage.forEach((producto, indice) => {
         document.getElementById(`producto${indice}`).lastElementChild.lastElementChild.addEventListener("click", () => {
+            //Libreria Toastify
+            Toastify({
+                text: "Se Elimino el producto sin problemas",
+                duration: 3000,
+                gravity : "top",
+                position : "right",
+                avatar : "../img/smile.png",
+                backgroundColor : "rgba(255, 0, 0, 0.8)",
+                close : true,
+            }).showToast();
+            // Fin de Toastify
             document.getElementById(`producto${indice}`).remove()
             productos.splice(indice, 1)
             localStorage.setItem("storageProductos", JSON.stringify(productos))
