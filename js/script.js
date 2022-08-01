@@ -54,7 +54,8 @@ botonMostrar.addEventListener("click", () => {
     //Elimina el producto del HTML y del localstorage cuando el usuario le da click a Eliminar
     productoStorage.forEach((producto, indice) => {
         document.getElementById(`producto${indice}`).lastElementChild.lastElementChild.addEventListener("click", () => {
-            //Libreria Toastify
+
+            //Libreria Toastify Notificacion de eliminacion
             Toastify({
                 text: "Se Elimino el producto sin problemas",
                 duration: 3000,
@@ -65,6 +66,7 @@ botonMostrar.addEventListener("click", () => {
                 close : true,
             }).showToast();
             // Fin de Toastify
+            
             document.getElementById(`producto${indice}`).remove()
             productos.splice(indice, 1)
             localStorage.setItem("storageProductos", JSON.stringify(productos))
