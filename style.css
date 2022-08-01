@@ -1,26 +1,68 @@
-.contenedor{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
-.contenedorProducto{
-    background-color:beige;
-    display: flex;
-    width: 25%;
-    height: 250px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid black;
+body {
+    background: #eeeeee;
+    font-family: cursive;
+  }
+  
+  .container {
+    width: 600px;
+    height: 500px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 10px 50px 50px 50px;
+    border-radius: 50px;
+    border: 2px solid #cbcbcb;
+    box-shadow: 10px 15px 5px #cbcbcb;
+  }
+  
+  .container h1 {
+    background: #405ca1;
+    color: #fff;
+    font-size: 60px;
+    text-align: center;
+    padding: 2px 0 13px 0;
+    border-radius: 50px;
+  }
+  
+  #question {
+    font-size: 30px;
+    color: #5a6772;
+  }
+  
+  .button-grp {
+    margin-top: 30px;
+  }
+  
+  #btn0,
+  #btn1,
+  #btn2,
+  #btn3 {
+    background: #405ca1;
+    width: 250px;
     font-size: 20px;
-    margin:5px;
-}
-
-h3{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    border: 1px solid #1d3c6a;
+    border-radius: 50px;
+    margin: 10px 40px 10px 7.6px;
+    padding: 10px 10px;
+    color: #fff;
+  }
+  
+  #btn0:hover,
+  #btn1:hover,
+  #btn2:hover,
+  #btn3:hover {
+    cursor: pointer;
+    background: #2d85a4; /*come here*/
+  }
+  
+  #btn0:focus,
+  #btn1:focus,
+  #btn2:focus,
+  #btn3:focus {
+    outline: 0;
+  }
+  
+  #progress {
+    color: #2b2b2b;
+    font-size: 18px;
+  }
+  

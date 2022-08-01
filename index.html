@@ -2,62 +2,34 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>JS Quiz App</title>
     <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-      crossorigin="anonymous"
-    />
   </head>
   <body>
-    <!--  formulario Inicio-->
+    <button type="button" onclick="location.reload()">Reload</button>
     <div class="container">
-      <form id="idForm">
-        <div class="mb-3">
-          <label for="producto" class="form-label">Producto</label>
-          <input
-            type="text"
-            class="form-control"
-            id="producto"
-            aria-describedby="userHelp"
-          />
+      <div id="quiz">
+        <h1>Quiz</h1>
+
+        <hr style="margin-bottom: 20px" />
+
+        <p id="question"></p>
+
+        <div class="button-grp">
+          <button id="btn0"><span id="choice0"></span></button>
+          <button id="btn1"><span id="choice1"></span></button>
+          <button id="btn2"><span id="choice2"></span></button>
+          <button id="btn3"><span id="choice3"></span></button>
         </div>
-        <div class="mb-3">
-          <label for="precio" class="form-label">Precio</label>
-          <input
-            type="number"
-            class="form-control"
-            id="precio"
-            aria-describedby="userHelp"
-          />
-        </div>
-        <div class="mb-3">
-          <label for="stock" class="form-label">Stock</label>
-          <input
-            type="number"
-            class="form-control"
-            id="stock"
-            aria-describedby="emailHelp"
-          />
-        </div>
-        <button type="submit" class="btn btn-primary">
-          Crear Nuevo Producto
-        </button>
-      </form>
+
+        <hr style="margin-top: 50px" />
+
+        <footer>
+          <p id="progress">Question x of y</p>
+        </footer>
+      </div>
     </div>
-    <!--  formulario FIN -->
-    <!--  producto INICIO -->
-    <div id="contenedor" class="contenedor"></div>
-    <!--  Producto FIN -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-      crossorigin="anonymous"
-    ></script>
-    <script src="main.js"></script>
+
+    <script type="text/JavaScript" src="main.js"></script>
   </body>
 </html>
