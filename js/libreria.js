@@ -12,3 +12,8 @@ btnSubmit.addEventListener("click", () => {
 
 })
 
+/*Elegi toastify porque me parecio que era perfecto ya que era un alerta simple
+y para nada molesta para el usuario*/
+
+//PD: la otra me parecio muy horrible
+
