@@ -1,38 +1,3 @@
-/*guardar_localstorage()
-
-function guardar_localstorage(){
-	let persona ={
-		nombre : "simon",
-		edad : 21,
-		usuario : "admin",
-		contraseña : "admin"
-	}
-
-
-let nombre = "pedro"
-
-localStorage.setItem("usuario", JSON.stringify(persona))
-
-
-
-
-}
-obtener_localstorage()
-
-function obtener_localstorage(){
-
-	if(JSON.parse( localStorage.getItem("usuario"))){
-
-		let usuario = JSON.parse( localStorage.getItem("usuario"))
-
-		console.log( usuario )
-
-	}else{
-
-		console.log("No se encontro nada")
-	}
-}*/
-
 function Quiz (questions) {
 	this.score = 0; 
 	this.questions = questions;
@@ -128,4 +93,4 @@ const questions = [
 
 let quiz = new Quiz (questions);
 
-populate(); 
+populate();

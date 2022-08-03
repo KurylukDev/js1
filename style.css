@@ -1,68 +1,36 @@
 body {
-    background: #eeeeee;
-    font-family: cursive;
-  }
-  
-  .container {
-    width: 600px;
-    height: 500px;
-    margin: 20px auto;
-    background-color: #fff;
-    padding: 10px 50px 50px 50px;
-    border-radius: 50px;
-    border: 2px solid #cbcbcb;
-    box-shadow: 10px 15px 5px #cbcbcb;
-  }
-  
-  .container h1 {
-    background: #405ca1;
-    color: #fff;
-    font-size: 60px;
-    text-align: center;
-    padding: 2px 0 13px 0;
-    border-radius: 50px;
-  }
-  
-  #question {
-    font-size: 30px;
-    color: #5a6772;
-  }
-  
-  .button-grp {
-    margin-top: 30px;
-  }
-  
-  #btn0,
-  #btn1,
-  #btn2,
-  #btn3 {
-    background: #405ca1;
-    width: 250px;
-    font-size: 20px;
-    border: 1px solid #1d3c6a;
-    border-radius: 50px;
-    margin: 10px 40px 10px 7.6px;
-    padding: 10px 10px;
-    color: #fff;
-  }
-  
-  #btn0:hover,
-  #btn1:hover,
-  #btn2:hover,
-  #btn3:hover {
-    cursor: pointer;
-    background: #2d85a4; /*come here*/
-  }
-  
-  #btn0:focus,
-  #btn1:focus,
-  #btn2:focus,
-  #btn3:focus {
-    outline: 0;
-  }
-  
-  #progress {
-    color: #2b2b2b;
-    font-size: 18px;
-  }
-  
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  box-sizing: border-box;
+}
+
+.card {
+  background: #191c29;
+  width: 80vw;
+  height: 80vh;
+  padding: 3px;
+  border-radius: 6px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  border: 2px purple solid;
+}
+
+span{
+  color: rgba(9, 180, 137, 0.959);
+}
+
+p{
+  color: rgba(197, 197, 197, 0.822);
+}
+
+.dBlue{
+  padding: 10px;
+  border: 2px white solid;
+  display: flex;
+  flex-direction: row;
+}
+
