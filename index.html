@@ -1,42 +1,17 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <form id="formulario">
-            <h3>Agregar Producto Nuevo</h1><br>
-            <div class="mb-3">
-              <label for="idNombre" class="form-label">Nombre</label>
-              <input type="text" class="form-control" id="idNombre" name="nombre">
-            </div>
-            <div class="mb-3">
-              <label for="idPrecio" class="form-label">Precio</label>
-              <input type="number" class="form-control" id="idPrecio" name="precio">
-            </div>
-            <div class="mb-3">
-              <label for="idStock" class="form-label">Stock</label>
-              <input type="number" class="form-control" id="idStock" name="stock">
-            </div>
-            <button type="submit" class="btn btn-dark" id="btnSubmit">Añadir Producto</button>
-          </form>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Probando Apis</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div id="dolar"></div>
     </div>
-    <div class="mostrar">
-    <button id="mostrar" class="btn btn-secondary">Mostrar Productos</button>
-    <div id="contenedorProductos" class="container row contenedorProducto"></div>
-  </div>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-  <script src="js/libreria.js"></script>
-    <script src="js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-
-</body>
+    <div class="cardNasa">
+      <div id="nasa"></div>
+    </div>
+    <script src="main.js"></script>
+  </body>
 </html>

@@ -1,41 +1,67 @@
-*{
-    margin:0;
-    padding:0;
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  box-sizing: border-box;
 }
 
-#formulario{
-    margin: 40px;
+.card {
+  background: #191c29;
+  width: 15%;
+  height: 100%;
+  padding: 3px;
+  border-radius: 6px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  border: 2px purple solid;
 }
 
-.centrar{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    margin: 5px;
-}
-.contenedorMostrar{
-    background-color: rgba(0, 234, 255, 0.254);
-    width:250px;
+span{
+  color: rgba(9, 180, 137, 0.959);
 }
 
-.mostrar{
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    margin: auto;
+p{
+  color: rgba(197, 197, 197, 0.822);
 }
 
-.imgProducto{
-    margin: 10px;
-    width: 150px;
-    height: 100px;
+.dBlue{
+  padding: 10px;
+  border: 2px white solid;
+  display: flex;
 }
 
+.cardNasa{
+  background: #191c29;
+  width: 100%;
+  height: 100%;
+}
 
-.contenedorMostrar button{
-display: flex;
-justify-content: center;
-align-items: center;
-margin: 10px;
+#nasa{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#nasa img{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#nasa h2{
+  color: white;
+
+}
+
+#nasa p{
+  margin: auto;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
