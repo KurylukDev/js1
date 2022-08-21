@@ -1,5 +1,9 @@
 {
   "dependencies": {
+<<<<<<< HEAD
+=======
+    "sweetalert2": "^11.4.29",
+>>>>>>> testing
     "toastify-js": "^1.12.0"
   }
 }
