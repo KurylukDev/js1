@@ -204,9 +204,87 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.125);
 }
 
+#contenedorProductos{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.cardProductos{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px 10px;
+  padding: 0.8vh;
+  width: 20vw;
+  background: rgba(255, 255, 255, 0.363);
+  box-shadow: 0 0.75rem 2rem 0 rgba(0, 0, 0, 0.24);
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.cardProductos img{
+  margin: 20px;
+  width: 80%;
+  height: 300px;
+}
+
+#contenedorCarrito{
+  max-height: 200px;
+  width:20vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow-y:scroll;
+}
+
+
+.productoEnCarrito{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contenedorCarrito img{
+  width: 50px;
+  height: 50px;
+}
 .cardItems img{
   width: 100%;
   height: 50vh;
+}
+.botonEliminar{
+  color: white;
+  font-size: 30px;
+  background-color: red;
+  width: 40px;
+  height: 20px;
+}
+
+#btnVaciar{
+  width:100%;
+  height: 10%;
+  background-color:red;
+  margin-bottom: 2px;
+
+}
+
+#btnCart ,  p{
+  display: flex;
+  flex-direction: column;
+  height: 20%;
+  width:100%;
+  margin: 0;
+}
+
+.precioCarrito, button{
+  display: flex;
+  justify-content: center;
+  align-items: center
 }
 
 .flex {
