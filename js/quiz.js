@@ -71,7 +71,7 @@ function guess(id, guess) {
 function showProgress() {
 	let currentQuestionNumber = quiz.questionIndex + 1;
 	let element = document.getElementById('progress');
-	element.innerHTML = "Questions " + currentQuestionNumber + " of " + quiz.questions.length;
+	element.innerHTML = "questions " + currentQuestionNumber + " of " + quiz.questions.length;
 }
 
 //Funcion para mostrar los resultados al finalizar la quiz
@@ -80,32 +80,33 @@ function showScores() {
 	if(quiz.score >= 4){
 		let element = document.getElementById('quiz');
 		element.innerHTML = `
-		<h1>Result</h1>
+		<h1>result</h1>
 		<img class='imgScore' src='../media/img/quiz/congrats.gif'>
-		<h2 id='score'> Your Scores: ${quiz.score}</h2>
+		<h2 id='score'> your scores: ${quiz.score}</h2>
+		<button class="btn btn-dark " type="button" onclick="location.reload()">reload</button>
 		`
 	}else{
 		// si solo acertaste 3 o menos te invita volver a intentar
 		let element = document.getElementById('quiz');
 		element.innerHTML = `
-		<h1>Result</h1>
+		<h1>result</h1>
 		<img class='imgScore' src='../media/img/quiz/fail.gif'>
-		<h2 id='score'> Your Scores: ${quiz.score}</h2>
-		<button type="button" onclick="location.reload()">Reload</button>
+		<h2 id='score'> your Scores: ${quiz.score}</h2>
+		<button class="btn btn-dark " type="button" onclick="location.reload()">reload</button>
 		`
 	}
 }
 
 
 const questions = [
-	new Question("¿En Que Episodio Murio Obi-Wan Kenobi?", ["Episodio III", "Episodio VI", "Episodio IV", "Episodio V"], "Episodio IV","<img class='imgQuiz' src='../media/img/quiz/obiwanviejo.webp'>"),
-	new Question("¿Quien era el maestro del Conde Dooku?", ["Tyranus", "Darth Sidiou", "Yoda", "Qui-Gon Jinn"], "Yoda","<img class='imgQuiz' src='../media/img/quiz/dooku.webp'>"),
-	new Question("¿Quien mato a Qui-Gon Jinn?", ["Darth Maul", "Darth Tyranus", "Darth Sidiou", "Darth Vader"], "Darth Maul","<img class='imgQuiz' src='../media/img/quiz/qui-gon.webp'>"),
-	new Question("¿Qué le pasó a Anakin Skywalker durante la batalla con el Conde Dooku?", ["Perdió su pierna izquierda", "Perdió su brazo derecho", "Perdió su pierna derecha", "Él perdió"], "Perdió su brazo derecho","<img class='imgQuiz' src='../media/img/quiz/anakin.jpg'>"),
-	new Question("¿Cuál es el arma preferida de Chewbacca?", ["Rifle bláster", "Sable de luz", "Club de metal", "Bowcaster"], "Bowcaster","<img class='imgQuiz' src='../media/img/quiz/chewbacca.gif'>"),
-	new Question("¿De qué color es la pierna derecha de C-3PO?", ["Negro", "Rojo", "Plata", "Dorado"], "Plata","<img class='imgQuiz' src='../media/img/quiz/c-3po.gif'>"),
-	new Question("¿Quién hizo estallar la primera Estrella de la Muerte y con qué arma?", ["Luke Skywalker con su sable de luz", "Princesa Leia con un X-Wing", "Luke Skywalker con un X-Wing", "Princesa Leia con un detonador térmico"], "Luke Skywalker con un X-Wing","<img class='imgQuiz' src='../media/img/quiz/star.webp'>"),
-	new Question("¿Cual es el planeta natal de Obi-Wan Kenobi?", ["Stewjon", "Tatooine", "Naboo", "Utapau"], "Stewjon","<img class='imgQuiz' src='../media/img/quiz/planeta.jpg'>"),
+	new Question("¿en que episodio murio obi-wan kenobi?", ["episodio iii", "episodio vi", "episodio iv", "episodio v"], "episodio vi","<img class='imgQuiz' src='../media/img/quiz/obiwanviejo.webp'>"),
+	new Question("¿quien era el maestro del conde dooku?", ["tyranus", "darth sidiou", "yoda", "qui-gon jinn"], "yoda","<img class='imgQuiz' src='../media/img/quiz/dooku.webp'>"),
+	new Question("¿quien mato a qui-gon jinn?", ["darth maul", "darth tyranus", "darth sidiou", "darth vader"], "darth maul","<img class='imgQuiz' src='../media/img/quiz/qui-gon.webp'>"),
+	new Question("¿qué le pasó a anakin skywalker durante la batalla con el conde dooku?", ["perdió su pierna izquierda", "perdió su mano derecho", "perdió su pierna derecha", "el perdió"], "perdió su mano derecho","<img class='imgQuiz' src='../media/img/quiz/anakin.jpg'>"),
+	new Question("¿cuál es el arma preferida de chewbacca?", ["rifle bláster", "sable de luz", "club de metal", "bowcaster"], "bowcaster","<img class='imgQuiz' src='../media/img/quiz/chewbacca.gif'>"),
+	new Question("¿de qué color es la pierna derecha de c-3po?", ["negro", "rojo", "plata", "dorado"], "plata","<img class='imgQuiz' src='../media/img/quiz/c-3po.gif'>"),
+	new Question("¿quién hizo estallar la primera estrella de la muerte y con qué arma?", ["luke skywalker con su sable", "princesa leia con un x-wing", "luke skywalker con un x-wing", "princesa leia con un detonador térmico"], "luke skywalker con un x-wing","<img class='imgQuiz' src='../media/img/quiz/star.webp'>"),
+	new Question("¿cual es el planeta natal de obi-wan kenobi?", ["stewjon", "tatooine", "naboo", "utapau"], "stewjon","<img class='imgQuiz' src='../media/img/quiz/planeta.jpg'>"),
 ];
 
 let quiz = new Quiz (questions);

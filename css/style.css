@@ -1,30 +1,55 @@
+
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+@font-face {
+  font-family: 'starwars';
+  src: url(../media/fonts/starjedi.ttf);
+}
 body {
-    background: #eeeeee;
+    background: #fffefe;
     font-family: cursive;
   }
+
+  h1, h2, h3, a{
+    font-family:"starwars" ,"Lato", sans-serif;
+  }
+  p{
+    color: black;
+    font-family:"Lato", sans-serif;
+  }
+  h4{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
   
-  .container {
+  .containerQuiz {
     width: 50%;
-    height: 50%px;
+    height: 100%;
     margin: 20px auto;
-    background-color: #fff;
+    background-color: rgba(182, 182, 182, 0.089);
     padding: 10px 50px 50px 50px;
     border-radius: 50px;
     border: 2px solid #cbcbcb;
-    box-shadow: 10px 15px 5px #cbcbcb;
+    box-shadow: 10px 15px 5px #0505054b;
+  }
+
+  .sectionQuiz{
+    position: absolute;
+    width: 100%;
+    top: 10%;
+    left: 0%;
   }
   
-  .container h1 {
-    width: 80%;
-    background: #405ca1;
+  .containerQuiz h1 {
+    background: rgba(255, 255, 255, 0.096);
+    width: 100%;
+    border: 2px solid black;
     color: #fff;
     font-size: 60px;
     text-align: center;
     padding: 2px 0 13px 0;
     border-radius: 50px;
   }
-  
   #quiz{
+    color: white;
     display: flex;
     flex-direction:column;
     justify-content: center;
@@ -32,37 +57,64 @@ body {
   }
   
   #question {
-    font-size: 30px;
-    color: #5a6772;
+    font-family: "starwars";
+    font-size: 25px;
+    color: #ffffff;
   }
   
-  .button-grp {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 30px;
-  }
   
   #btn0,
   #btn1,
   #btn2,
   #btn3 {
-    background: #405ca1;
-    width: 250px;
-    font-size: 20px;
-    border: 1px solid #1d3c6a;
-    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.096);
+    box-shadow: 0 0.75rem 2rem 0 rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    font-family: "starwars";
+    font-size: 1.2vw;
+    width: 18vw;
+    height:8vh;
     margin: 10px 40px 10px 7.6px;
     padding: 10px 10px;
     color: #fff;
   }
+
+  .button-grp{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  @media (max-width: 1414px){
+    .containerQuiz{
+      background-color:rgba(0, 0, 0, 0.753)
+    }
+
+    .button-grp span{
+      font-size: 20px;
+    }
+
+    #btn0,
+    #btn1,
+    #btn2,
+    #btn3{
+      display: flex;
+      height: 100%;
+    }
+  }
   
   #btn0:hover,
-  #btn1:hover,
+  #btn1:hover{
+    cursor: pointer;
+    background: linear-gradient(0.25turn, #0400ff, #f804ec6e, #f31616);
+  }
+
   #btn2:hover,
   #btn3:hover {
     cursor: pointer;
-    background: #2d85a4; /*come here*/
+    background: linear-gradient(0.25turn, #0400ff, #f804ec6e, #f31616);
   }
   
   #btn0:focus,
@@ -73,7 +125,8 @@ body {
   }
   
   #progress {
-    color: #2b2b2b;
+    color: #ffffff;
+    font-family: "starwars";
     font-size: 18px;
   }
 
@@ -84,6 +137,7 @@ body {
     height: 40vh;
   }
   #score{
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,7 +146,204 @@ body {
     display: flex;
       margin: auto;
       width: 25vw;
-      height: 30vh;
+      height: 20vh;
     }
-  
-  
+
+.sectionWaves h1 {
+  position: absolute;
+  top: 60%;
+  font-family:"starwars" ,"Lato", sans-serif;
+  font-weight: 300;
+  letter-spacing: 5px;
+  font-size: 35px;
+}
+
+.sectionWaves {
+  position: relative;
+  text-align: center;
+  background-image: url(../media/img/all/star.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  color: white;
+}
+
+
+.logo {
+  width: 50px;
+  fill: white;
+  padding-right: 15px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.inner-sectionWaves {
+  height: 50vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.inner-sectionWavesQuiz{
+  height: 70vh;
+}
+
+.inner-sectionWaves h1{
+  padding: 0.8vh;
+  background: rgba(255, 255, 255, 0.096);
+  box-shadow: 0 0.75rem 2rem 0 rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.cardItems{
+  padding: 0.8vh;
+  background: rgba(255, 255, 255, 0.363);
+  box-shadow: 0 0.75rem 2rem 0 rgba(0, 0, 0, 0.24);
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.cardItems img{
+  width: 100%;
+  height: 50vh;
+}
+
+.flex {
+  /*Flexbox for containers*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.waves {
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  margin-bottom: -7px; /*Fix for safari gap*/
+  min-height: 100px;
+  max-height: 150px;
+}
+
+.content {
+  position: relative;
+  height: 1vh;
+  text-align: center;
+  background-color: white;
+}
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height: 40px;
+    min-height: 40px;
+  }
+  .content {
+    height: 30vh;
+  }
+  h1 {
+    font-size: 24px;
+  }
+}
+
+.wikiMain .btn{
+  background: rgba(255, 255, 255, 0.205);
+  box-shadow: 0 0.85rem 2.5rem 0 rgba(2, 2, 2, 0.24);
+  border-radius: 1rem;
+  border: 1px solid rgba(43, 42, 42, 0.233);
+}
+
+.btnFilms:hover{
+  color:#3000b3;
+}
+
+.btnPeople:hover{
+  color:#da05da;
+}
+
+.btnVehicles:hover{
+  color:#fd0202;
+}
+
+
+.logoStarWars{
+  position: absolute;
+  left:50;
+  top:10%;
+  width: 40%;
+  height: 45%;
+}
+
+.btn{
+  font-family:"starwars" ,"Lato", sans-serif;
+  font-size:20px;
+}
+.cartShopping{
+  width: 2vw;
+  height: 5vh;
+}
+
+header{
+  z-index: 100;
+  position: sticky;
+  top: 0;
+
+}
+
+.btnShopping{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+@media (max-width: 982px) 
+{
+  nav ul,nav li,nav a{
+    display: flex;
+    justify-content: center;
+  }
+
+  nav ul, nav li{
+    font-size: 20px;
+  }
+
+  .dropMenu{
+    width:100%;
+    height:auto;
+  }
+
+  .cartShopping{
+    width: 4vw;
+    height: 5vh;
+  }
+}
