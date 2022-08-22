@@ -130,6 +130,8 @@ const botonVaciar = document.getElementById('btnVaciar')
 
 const botonFinalizar = document.getElementById('btnCart')
 
+const precioTotal = document.getElementById('precioTotal')
+
 let carrito = []
 
 if(localStorage.getItem("carrito")) {
@@ -199,7 +201,6 @@ const agregarAlCarrito = (prodId) =>{
     const prod = carrito.map (prod => {
       if (prod.id === prodId){
         prod.cantidad++
-        prod.precio =+ prod.precio
         Toastify({
           text: "Se agrego el producto sin problema",
           duration: 1500,
@@ -245,7 +246,7 @@ const actualizarCarrito = () =>{
     <div class='productoEnCarrito'>
     <img src=${prod.img}>
     <p>${prod.nombre}</p>
-    <p>Precio : $ ${prod.precio}</p>
+    <p class="carritoPrecio">Precio : $ ${prod.precio}</p>
     <p>Cantidad:<span id="cantidad">${prod.cantidad}</span></p>
     <button onclick ="eliminarDelCarrito(${prod.id})" class="botonEliminar"></button>
     </div>
@@ -255,6 +256,9 @@ const actualizarCarrito = () =>{
 
     localStorage.setItem('carrito', JSON.stringify(carrito))
   })
+  precioTotal.innerText = carrito.reduce((acc,prod)=> acc + prod.precio * prod.cantidad,0)
 }
+
+
 
 //final Ecommerce
