@@ -171,7 +171,7 @@ botonFinalizar.addEventListener('click', () =>{
     })
   }
 })
-//llamado a mi array + impresion a div
+//llamado llama al array  + impresion a div
 stockProductos.forEach((producto) => {
   const div = document.createElement('div')
   div.classList.add('cardProductos')
@@ -212,7 +212,7 @@ const agregarAlCarrito = (prodId) =>{
       }
     })
   }else{
-
+//agrega el producto al carrito + alerta
   const item = stockProductos.find ((prod) => prod.id === prodId)
   carrito.push(item)
   console.log(carrito)
@@ -229,7 +229,7 @@ const agregarAlCarrito = (prodId) =>{
   actualizarCarrito()
 }
 
-
+//elimina un producto del carrito (producto entero)
 const eliminarDelCarrito = (prodId) =>{
   const item = carrito.find ((prod) => prod.id === prodId)
   const indice = carrito.indexOf(item)
@@ -256,6 +256,7 @@ const actualizarCarrito = () =>{
 
     localStorage.setItem('carrito', JSON.stringify(carrito))
   })
+  //Cambiar el precio total segun los productos que recorren el carrito
   precioTotal.innerText = carrito.reduce((acc,prod)=> acc + prod.precio * prod.cantidad,0)
 }
 
